@@ -1,10 +1,9 @@
-
 import React, {Component} from 'react';
 import { View, Text, Image, TouchableOpacity, TextInput, StyleSheet,ImageBackground } from 'react-native';
 import { userLogin } from '../actions/userAction';
 import { connect } from 'react-redux';
 import { configureFonts, DefaultTheme } from 'react-native-paper';
-//import {fonts } from './assets/fonts';
+
 
 class Login extends Component {
     constructor(props) {
@@ -46,7 +45,7 @@ class Login extends Component {
         }
         this.setState({ errors })
         if(errors.email==='' && errors.pass===''){
-          //this.submitForm();
+          
           const userinfo={
             email:this.state.email,
             password:this.state.password
@@ -127,18 +126,13 @@ const styles = StyleSheet.create({
     container: {
         justifyContent: 'center',
         alignItems: 'center',
-        //flex: 1,
-        //backgroundColor:'white'
-       // backgroundImage: url("wp.jpg")
+
     },
     logo: {
-        //borderRadius: 50,
         width:150, 
         height: 150, 
         marginTop: 130,
         marginBottom:3,
-
-        //justifyContent: 'center',
         alignItems: 'center'
         
     },
@@ -150,26 +144,11 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         bottom:210,
         fontFamily: 'Cochin'
-        // textShadowOffset: {
-        //     height: 5,
-        //     width: 5
-        // },
-        // textShadowRadius: 5,
-        // textShadowColor: '#1a0000'
+    
 
     },
     input: {
-        // margin: 10,
-        // height: 40,
-        // borderColor: '#000000',
-        // borderWidth: 1.5,
-        // borderRadius: 8,
-        // width: '80%',
-        // padding: 10,
-        // fontSize: 13,
-        // lineHeight: 20,
-        // color: '#ffffff',
-        // right: -0
+
          width:"80%",
       backgroundColor:"white",
       borderRadius:25,
@@ -219,17 +198,7 @@ const styles = StyleSheet.create({
        
 
     },
-    // RegisterButton: {
-    //     backgroundColor: '#ffffff',
-    //     padding: 12,
-    //     margin: 15,
-    //     height: 40,
-    //     borderRadius: 5,
-    //     width: 90,
-    //     left: 40,
-    //     marginTop: -50,
-        
-    // },
+
     RegisterButtonText:{
         color: '#06d4d4',
         fontSize: 18,
@@ -244,9 +213,9 @@ const styles = StyleSheet.create({
         fontSize:15
     },
     bg:{
-        // resizeMode:'contain',
-        // height:'100%',
-        // width:'100%',
+        resizeMode:'contain',
+        height:'100%',
+        width:'100%',
         
     },
     errorstyle: {
